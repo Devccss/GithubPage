@@ -6,7 +6,8 @@ const projects = [
     category: "UI/UX Design",
     description: "A modern portfolio website design with smooth animations and intuitive navigation.",
     image: "Fordaweb.png",
-    tags: ["Figma", "Astro", "UI/UX"]
+    tags: ["Figma", "Astro", "UI/UX"],
+    link: "fordaweb.netlify.app",
   },
   
 ];
@@ -20,7 +21,7 @@ const categories = ["All", ...new Set(projects.map(project => project.category))
     
     <div class="filter-buttons animate-on-scroll">
       {categories.map(category => (
-        <button class="filter-button" data-filter={category === "All" ? "all" : category}>{category}</button>
+        <button class="filter-button" data-filter={category === "All" ? "all" : category} >{category}</button>
       ))}
     </div>
     
@@ -30,7 +31,7 @@ const categories = ["All", ...new Set(projects.map(project => project.category))
           <div class="project-image">
             <img src={project.image} alt={project.title} />
             <div class="project-overlay">
-              <a href="#" class="view-project">View Project</a>
+              <a href={project.link} class="view-project">View Project</a>
             </div>
           </div>
           <div class="project-info">
