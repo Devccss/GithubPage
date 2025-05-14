@@ -31,7 +31,7 @@ const categories = ["All", ...new Set(projects.map(project => project.category))
           <div class="project-image">
             <img src={project.image} alt={project.title} />
             <div class="project-overlay">
-              <a href={project.link} class="view-project">View Project</a>
+              <a href={project.link.startsWith('http') ? project.link : `https://${project.link}`} class="view-project">View Project</a>
             </div>
           </div>
           <div class="project-info">
