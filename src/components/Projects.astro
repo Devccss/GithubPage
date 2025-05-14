@@ -1,33 +1,14 @@
 ---
 const projects = [
-  {
-    title: "E-commerce Website",
-    category: "Web Development",
-    description: "A fully responsive e-commerce platform with product filtering, cart functionality, and secure checkout.",
-    image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-    tags: ["JavaScript", "React", "CSS"]
-  },
-  {
-    title: "Restaurant App",
-    category: "Mobile Development",
-    description: "A mobile application for a local restaurant, featuring online ordering, reservations, and loyalty program.",
-    image: "https://images.pexels.com/photos/6633920/pexels-photo-6633920.jpeg?auto=compress&cs=tinysrgb&w=800",
-    tags: ["React Native", "Firebase", "Node.js"]
-  },
+  
   {
     title: "Portfolio Design",
     category: "UI/UX Design",
     description: "A modern portfolio website design with smooth animations and intuitive navigation.",
-    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
-    tags: ["Figma", "Adobe XD", "UI/UX"]
+    image: "/Fordaweb.png",
+    tags: ["Figma", "Astro", "UI/UX"]
   },
-  {
-    title: "Task Management App",
-    category: "Web Development",
-    description: "A task management application with drag-and-drop functionality, team collaboration, and progress tracking.",
-    image: "https://images.pexels.com/photos/3987066/pexels-photo-3987066.jpeg?auto=compress&cs=tinysrgb&w=800",
-    tags: ["TypeScript", "React", "Node.js"]
-  }
+  
 ];
 
 const categories = ["All", ...new Set(projects.map(project => project.category))];

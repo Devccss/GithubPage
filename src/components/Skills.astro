@@ -3,8 +3,8 @@ const skillCategories = [
   {
     name: "Frontend",
     skills: [
-      { name: "HTML5", level: 90 },
-      { name: "CSS3", level: 85 },
+      { name: "HTML5", level: 100 },
+      { name: "CSS3", level: 100 },
       { name: "JavaScript", level: 90 },
       { name: "TypeScript", level: 80 },
       { name: "React", level: 85 }
@@ -63,10 +63,6 @@ const tools = [
                 <div class="skill-item">
                   <div class="skill-info">
                     <span class="skill-name">{skill.name}</span>
-                    <span class="skill-percentage">{skill.level}%</span>
-                  </div>
-                  <div class="skill-bar">
-                    <div class="skill-progress" style={`width: ${skill.level}%`}></div>
                   </div>
                 </div>
               ))}
@@ -206,6 +202,9 @@ const tools = [
   
   .skill-info {
     display: flex;
+    border-radius: 8px;
+    padding: var(--space-3);
+    border: 1px solid var(--color-border);
     justify-content: space-between;
     margin-bottom: var(--space-1);
   }
